@@ -1,0 +1,18 @@
+import 'reflect-metadata';
+import { GraphQLObjectType, GraphQLScalarType } from 'graphql';
+import { GraphQLList } from 'graphql/type/definition';
+import { EGraphTypes } from '../common/enums';
+import { ISchemaDecoratorResolver } from '../common/interfaces';
+export declare function getResolver(resolverClass: any): ISchemaDecoratorResolver;
+export declare function resolver(middlewares?: Function[]): Function;
+export declare function field(method: EGraphTypes, selfMiddlewares?: Function[]): Function;
+export declare function objectType(name: string, fields: any): Function;
+export declare function scalarType(type: GraphQLScalarType | GraphQLObjectType | GraphQLList<any>): Function;
+export declare function argument(fields?: object): Function;
+export declare function Resolver(middlewares?: Function[]): Function;
+export declare function Query(middlewares?: Function[]): Function;
+export declare function Mutation(middlewares?: Function[]): Function;
+export declare function Subscription(middlewares?: Function[]): Function;
+export declare function ObjectType(name: string, fields: any): Function;
+export declare function ScalarType(type: GraphQLScalarType | GraphQLObjectType | GraphQLList<any>): Function;
+export declare function Arguments(fields: any): Function;

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "lib": [
+      "es5",
+      "es2015.promise",
+      "esnext"
+    ],
+    "types": ["node"],
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

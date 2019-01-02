@@ -1,0 +1,30 @@
+{
+  "name": "graphql-express-server-decorators",
+  "version": "0.0.5",
+  "description": "TypeScript decorators and server run class based on Express and GraphQL integration.",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "author": "Oskar Serafin <serafinoskar@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/boski-src/graphql-express-server-decorators",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-playground-middleware-express": "^1.7.6",
+    "http": "0.0.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.3.0",
+    "reflect-metadata": "^0.1.12",
+    "subscriptions-transport-ws": "^0.9.15"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.0.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
