@@ -1,4 +1,4 @@
-graphql-express-server-decorators
+[graphql-express-server-decorators](https://www.npmjs.com/package/graphql-express-server-decorators)
 ===
 
 > Project provide typescript decorators for setup server based on Express and GraphQL integration.
