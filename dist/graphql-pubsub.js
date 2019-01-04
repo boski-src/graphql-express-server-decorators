@@ -41,12 +41,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var graphql_subscriptions_1 = require("graphql-subscriptions");
 __export(require("graphql-subscriptions"));
 exports.graphQLPubSub = new graphql_subscriptions_1.PubSub();
-function publish(subscriptionName, data) {
+function publish(subscriptionName, data, client) {
+    if (client === void 0) { client = exports.graphQLPubSub; }
     return __awaiter(this, void 0, void 0, function () {
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
-                case 0: return [4 /*yield*/, exports.graphQLPubSub.publish(subscriptionName, (_a = {},
+                case 0: return [4 /*yield*/, client.publish(subscriptionName, (_a = {},
                         _a[subscriptionName] = data,
                         _a))];
                 case 1:
