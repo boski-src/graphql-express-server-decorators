@@ -3,6 +3,8 @@
 
 > Project provide typescript decorators for setup server based on Express and GraphQL integration.
 
+> Example of project using this: https://github.com/boski-src/teamflow-project-management
+
 ## Installation
 ```
 npm install graphql-express-server-decorators --save
